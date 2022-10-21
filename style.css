@@ -148,11 +148,11 @@ body {
     width: 850px;
     font-family: "bebasnuve";
     text-align: center;
-    color: rgb(228, 17, 17);
+    color:white;
     font-size: 25px;
     font-weight: normal;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 2px 2px 2px brown;
     margin: 27px auto;
 
 }
@@ -179,4 +179,35 @@ body {
     line-height: 130px;
     text-align: center;
     margin: 0px auto;
+}
+
+.card .category{
+    width: 100%;
+    height: 45px;
+    font-family: "trebuchetMS";
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: brown;
+}
+.card .description{
+    font-family: "trebuchetMS";
+    text-align: center;
+    color: black;
+
+}
+/* Barra lateral */
+#lateral{
+    width: 300px;
+    min-height: 1200px;
+    font-family: "trebuchetMS";
+    float: left;
+}
+aside h3{
+    display: block;
+    width: auto;
+    height: 45px;
+    line-height: 15px;
+    background: url(img/gray.png);
+    box-shadow: 0px 1px 0px black;
 }
