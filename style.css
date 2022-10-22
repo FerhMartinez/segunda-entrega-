@@ -175,6 +175,7 @@ body {
     background: url(img/Programmer.png);
     background-position: 449px -1150px;
     animation: banner 10s linear;
+    overflow: hidden;
     
 
 }
@@ -197,7 +198,28 @@ body {
     letter-spacing: 2px;
     text-shadow: 2px 2px 2px brown;
     margin: 27px auto;
+    animation: text 10s linear;
 
+}
+@keyframes text{
+    0%{
+transform: translatex-Y(-200%) scale(2,2);
+opacity:1;
+    }
+    70%{
+transform:translateX(600%) scale(4,4);
+opacity: 0;
+    }
+    85%{
+transform:translateX(-600%) scale(4,4);
+text-shadow:none;
+color:transparent;
+opacity: o;
+    }
+    100%{
+transform:translateX(10%) scale(1,1);
+opacity: 1;
+    }
 }
 
 /* Tarjetas */
@@ -213,6 +235,11 @@ body {
     margin: 15px;
     margin-top:50px;
     cursor: pointer;
+    transition: all 300ms;
+}
+.card:hover{
+    background: #cccc;
+
 }
 .card .icon{
     display: block;
@@ -222,6 +249,20 @@ body {
     line-height: 130px;
     text-align: center;
     margin: 0px auto;
+    transition: all 300ms;
+}
+.card:hover .icon{
+    font-size: 60px;
+    color: tomato;
+    animation: icon 300ms linear;
+}
+@keyframes icon{
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
 }
 
 .card .category{
@@ -232,11 +273,45 @@ body {
     font-weight: bold;
     text-align: center;
     color: brown;
+    transition: all 300ms;
+}
+.card:hover .category{
+    color: goldenrod;
+    animation: category 500ms linear;
+
+}
+@keyframes category{
+    from{
+        transform: translateY(-400);
+        color:green;
+    }
+    to{
+        transform: translateY(0%);
+        color: goldenrod;
+    }
+
 }
 .card .description{
     font-family: "trebuchetMS";
     text-align: center;
     color: black;
+    transition: all 300ms linear;
+
+}
+.card:hover .description{
+    color: rgb(0, 162, 255);
+    animation: descrip 400ms linear;
+
+}
+@keyframes descrip{
+    from{
+        transform: translateX(-300%);
+        color: black;
+    }
+    to{
+        transform: translateX(0%) ;
+    }
+
 
 }
 /* Barra lateral */
@@ -277,7 +352,69 @@ aside h3{
     border: 1px solid #ccc; 
 }
 #lateral input[type="text"]{
-    width: 100%;
-    height: 15px;
+    width: 85%;
+    height: 30px;
     border:none;
+    padding-right: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ccc;
+    transition: all 300ms;
+    }
+    #lateral input[type="text"]:focus{
+        color: black;
+    }
+    #lateral input[type="button"],
+    #lateral input[type="submit"]{
+        height: 30px;
+        cursor: pointer;
+        font-size: 15px;
+        background-color: transparent;
+        border: none;
+        border-left: 1px solid #ccc;
+        color:black;
+        padding-left: 6px;
+    }
+    .aside-bar{
+        width: 85%;
+        height: 240px;
+        margin: 0px auto;
+        margin-top: 20px;
+        padding-top: 2px;
+        background: white;
+        border: 1px solid black;
+        box-shadow: 2px 2px 2px;
+    }
+
+    #login input[type="email"],
+    #login input[type="password"]{
+        display: block;
+        margin: 0px auto;
+        margin-top: 20px;
+        width: 80%;
+        height: 30px;
+        border: 1px solid#cccc;
+        border-radius: 5px;
+        padding-left: 35px;
+        color: black;
+
+    }
+    #login input[type="email"]:focus,
+    #login input[type="password"]:focus{
+        color: black;
+    }
+    #login #user,
+    #login #password{
+        text-align: center;
+        display: block;
+        position: absolute;
+        margin-left: 15px;
+        margin-top: 6px;
+        height: 30px;
+    }
+    #login #password{
+        margin-left: 18px;
+        margin-top: 25px;
+        font-size: 20px;
+
     }
