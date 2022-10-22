@@ -43,7 +43,8 @@ body {
     margin: 0px auto;
 }
 
-.gear, .icon {
+.gear,
+.icon {
     font-family: websymbolsRegular;
 }
 
@@ -72,7 +73,8 @@ body {
 
 
 }
-#logo:hover{
+
+#logo:hover {
     border-radius: 60px;
     color: black;
     background-color: #ccc;
@@ -89,26 +91,32 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-@keyframes rotate-gear{
-    from{
+
+@keyframes rotate-gear {
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotateZ(360deg);
     }
 }
-#logo:hover .gear{
+
+#logo:hover .gear {
     animation: abajo 500ms linear;
 
 }
+
 @keyframes abajo {
-    0%{
+    0% {
         transform: translateY(0%);
     }
-    50%{
+
+    50% {
         transform: translateY(200%);
     }
-    100%{
+
+    100% {
         transform: translateY(0%);
     }
 }
@@ -122,14 +130,17 @@ body {
     margin-right: 50px;
     transition: all 300ms;
 }
-#logo:hover h3{
+
+#logo:hover h3 {
     animation: right 300ms linear;
-} 
+}
+
 @keyframes right {
-    from{
+    from {
         transform: translateX(200%);
     }
-    to{
+
+    to {
         transform: translateX(0%);
     }
 }
@@ -166,7 +177,7 @@ body {
 
 /* Banner */
 
-#banner{
+#banner {
     width: 95%;
     height: 79px;
     border: 10px solid white;
@@ -176,23 +187,26 @@ body {
     background-position: 449px -1150px;
     animation: banner 10s linear;
     overflow: hidden;
-    
+
 
 }
-@keyframes banner{
+
+@keyframes banner {
     0% {
-        background-position: 0px 0px;   
+        background-position: 0px 0px;
     }
-    100%{
+
+    100% {
         background-position: 449px -1150px;
     }
 }
-#banner h1{
+
+#banner h1 {
     display: block;
     width: 850px;
     font-family: "bebasnuve";
     text-align: center;
-    color:white;
+    color: white;
     font-size: 25px;
     font-weight: normal;
     letter-spacing: 2px;
@@ -201,30 +215,34 @@ body {
     animation: text 10s linear;
 
 }
-@keyframes text{
-    0%{
-transform: translatex-Y(-200%) scale(2,2);
-opacity:1;
+
+@keyframes text {
+    0% {
+        transform: translatex-Y(-200%) scale(2, 2);
+        opacity: 1;
     }
-    70%{
-transform:translateX(600%) scale(4,4);
-opacity: 0;
+
+    70% {
+        transform: translateX(600%) scale(4, 4);
+        opacity: 0;
     }
-    85%{
-transform:translateX(-600%) scale(4,4);
-text-shadow:none;
-color:transparent;
-opacity: o;
+
+    85% {
+        transform: translateX(-600%) scale(4, 4);
+        text-shadow: none;
+        color: transparent;
+        opacity: o;
     }
-    100%{
-transform:translateX(10%) scale(1,1);
-opacity: 1;
+
+    100% {
+        transform: translateX(10%) scale(1, 1);
+        opacity: 1;
     }
 }
 
 /* Tarjetas */
 
-.card{
+.card {
     float: left;
     width: 200px;
     height: 300px;
@@ -233,15 +251,17 @@ opacity: 1;
     background: white;
     overflow: hidden;
     margin: 15px;
-    margin-top:50px;
+    margin-top: 50px;
     cursor: pointer;
     transition: all 300ms;
 }
-.card:hover{
+
+.card:hover {
     background: #cccc;
 
 }
-.card .icon{
+
+.card .icon {
     display: block;
     width: 100%;
     height: 120px;
@@ -251,21 +271,24 @@ opacity: 1;
     margin: 0px auto;
     transition: all 300ms;
 }
-.card:hover .icon{
+
+.card:hover .icon {
     font-size: 60px;
     color: tomato;
     animation: icon 300ms linear;
 }
-@keyframes icon{
-    from{
+
+@keyframes icon {
+    from {
         transform: translateY(-200%);
     }
-    to{
+
+    to {
         transform: translateY(0%);
     }
 }
 
-.card .category{
+.card .category {
     width: 100%;
     height: 45px;
     font-family: "trebuchetMS";
@@ -275,59 +298,68 @@ opacity: 1;
     color: brown;
     transition: all 300ms;
 }
-.card:hover .category{
+
+.card:hover .category {
     color: goldenrod;
     animation: category 500ms linear;
 
 }
-@keyframes category{
-    from{
+
+@keyframes category {
+    from {
         transform: translateY(-400);
-        color:green;
+        color: green;
     }
-    to{
+
+    to {
         transform: translateY(0%);
         color: goldenrod;
     }
 
 }
-.card .description{
+
+.card .description {
     font-family: "trebuchetMS";
     text-align: center;
     color: black;
     transition: all 300ms linear;
 
 }
-.card:hover .description{
+
+.card:hover .description {
     color: rgb(0, 162, 255);
     animation: descrip 400ms linear;
 
 }
-@keyframes descrip{
-    from{
+
+@keyframes descrip {
+    from {
         transform: translateX(-300%);
         color: black;
     }
-    to{
-        transform: translateX(0%) ;
+
+    to {
+        transform: translateX(0%);
     }
 
 
 }
+
 /* Barra lateral */
-#lateral{
+#lateral {
     width: 300px;
     min-height: 1200px;
     font-family: "trebuchetMS";
     float: left;
     margin: 20px;
 }
-aside h3{
+
+aside h3 {
     display: block;
     width: auto;
     height: 45px;
     line-height: 49px;
-    background: url(img/gray.png),white;
+    background: url(img/gray.png), white;
     box-shadow: 0px 1px 0px black, 2px 2px 0px black, 2px 3px 0px;
     font-size: 30px;
     font-family: "bebasneue";
@@ -336,85 +368,120 @@ aside h3{
     padding-left: 15px;
     margin-top: 30px;
     margin-bottom: 15px;
-    
+
 
 }
-#lateral h3:first-child{
+
+#lateral h3:first-child {
     margin-top: 0px;
 }
 
-#search{
+#search {
     width: 90%;
     height: 30px;
     margin: 10px auto;
     background-color: white;
     border-radius: 5px;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
 }
-#lateral input[type="text"]{
+
+#lateral input[type="text"] {
     width: 85%;
     height: 30px;
-    border:none;
+    border: none;
     padding-right: 5px;
     border-radius: 5px;
     background-color: transparent;
     color: #ccc;
     transition: all 300ms;
-    }
-    #lateral input[type="text"]:focus{
-        color: black;
-    }
-    #lateral input[type="button"],
-    #lateral input[type="submit"]{
-        height: 30px;
-        cursor: pointer;
-        font-size: 15px;
-        background-color: transparent;
-        border: none;
-        border-left: 1px solid #ccc;
-        color:black;
-        padding-left: 6px;
-    }
-    .aside-bar{
-        width: 85%;
-        height: 240px;
-        margin: 0px auto;
-        margin-top: 20px;
-        padding-top: 2px;
-        background: white;
-        border: 1px solid black;
-        box-shadow: 2px 2px 2px;
-    }
+}
 
-    #login input[type="email"],
-    #login input[type="password"]{
-        display: block;
-        margin: 0px auto;
-        margin-top: 20px;
-        width: 80%;
-        height: 30px;
-        border: 1px solid#cccc;
-        border-radius: 5px;
-        padding-left: 35px;
-        color: black;
+#lateral input[type="text"]:focus {
+    color: black;
+}
 
-    }
-    #login input[type="email"]:focus,
-    #login input[type="password"]:focus{
-        color: black;
-    }
-    #login #user,
-    #login #password{
-        text-align: center;
-        display: block;
-        position: absolute;
-        margin-left: 15px;
-        margin-top: 6px;
-        height: 30px;
-    }
-    #login #password{
-        margin-left: 18px;
-        margin-top: 25px;
-        font-size: 20px;
+#lateral input[type="button"],
+#lateral input[type="submit"] {
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #ccc;
+    color: black;
+    padding-left: 6px;
+}
 
-    }
+.aside-bar {
+    width: 85%;
+    height: 240px;
+    border-radius: 10px;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding-top: 2px;
+    background: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px;
+}
+
+#login input[type="email"],
+#login input[type="password"] {
+    display: block;
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 30px;
+    border: 1px solid#cccc;
+    border-radius: 5px;
+    padding-left: 35px;
+    color: black;
+
+}
+
+#login input[type="email"]:focus,
+#login input[type="password"]:focus {
+    color: black;
+}
+
+#login #user,
+#login #password {
+    text-align: center;
+    display: block;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 6px;
+    height: 30px;
+}
+
+#login #password {
+    margin-left: 18px;
+    margin-top: 25px;
+    font-size: 20px;
+
+}
+
+#login input[type="submit"],
+#login input[type="button"],
+#login button {
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    color:black;
+    border: 2px solid rgb(4, 185, 4);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "trebuchetMS";
+    font-weight: lighter;
+    margin-left: 85px;
+}
+#login a{
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 18px;
+    color: goldenrod;
+    text-align: center;
+}
