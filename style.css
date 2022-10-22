@@ -529,3 +529,25 @@ aside h3 {
 #irblog a:hover{
     color:gold ;
 }
+/*  Footer */
+#footer{
+    width: 100%;
+    height: 400px;
+    background: brown;
+    color: white;
+    overflow: hidden;
+}
+#footer .wrap >div{
+    float: left;
+    width: 320px;
+    height: 350px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "trebuchetMS";
+}
+#footer a{
+    text-decoration: none;
+    color:#ccc;
+    transition: all 300ms;
+}
