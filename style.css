@@ -468,7 +468,7 @@ aside h3 {
     width: 100px;
     height: 35px;
     margin-top: 20px;
-    color:black;
+    color: black;
     border: 2px solid rgb(4, 185, 4);
     border-radius: 5px;
     cursor: pointer;
@@ -477,7 +477,8 @@ aside h3 {
     font-weight: lighter;
     margin-left: 85px;
 }
-#login a{
+
+#login a {
     display: block;
     font-size: 14px;
     text-decoration: none;
@@ -486,8 +487,23 @@ aside h3 {
     text-align: center;
 }
 
-#login a:hover{
+#login a:hover {
     text-decoration: underline;
     color: greenyellow;
+
+}
+#red{
+    height: 200px;
+    padding-left: 8px;
+}
+
+#red a{
+    display: block;
+    color: rgb(223, 190, 6);
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 }
