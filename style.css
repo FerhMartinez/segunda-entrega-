@@ -493,7 +493,7 @@ aside h3 {
 
 }
 #red{
-    height: 200px;
+    height: 130px;
     padding-left: 8px;
 }
 
@@ -505,6 +505,30 @@ aside h3 {
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
+
+}
+#red .overlay{
+
+    display: block;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 2px #ccc;
+    border: 3px solid white;
+    border-radius: 6px;
+    position: absolute;
+    padding: 5px;
+    margin-left: 70px;
+    margin-top: -35px;
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 40ms;
+}
+#red div:hover .overlay{
+    opacity: 1;
+    transform: translateX(0%);
 
 }
 #articulo a{
@@ -541,7 +565,7 @@ aside h3 {
 }
 #footer .wrap >div{
     float: left;
-    width: 320px;
+    width: 26%;
     height: 350px;
     margin: 40px;
     text-align: center;
@@ -585,7 +609,15 @@ aside h3 {
 #footer ul li a{
     display: block;
     height: 40px;
+    transition: all 200ms;
+    
 }
+#footer ul li a:hover{
+    padding-left: 40px;
+    color:goldenrod;
+    width: 100%;
+}
+
 #footer iframe{
     width: 100%;
     height: 250px;
@@ -600,7 +632,7 @@ aside h3 {
 #footer #naveg img{
     font-size: 20px;
     width: 45px;
-    
+
 
 
 
