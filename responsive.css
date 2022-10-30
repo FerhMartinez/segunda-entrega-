@@ -76,4 +76,21 @@
     display: block;
     text-align: center;
 }
+.galeria2{
+    width: 70%;
+}
+}
+@media (max-width:990px){
+
+    #articulo {
+        text-align: center;
+        font-size: 73%;
+      }
+      }
+
+
+
+
+
+
 }
