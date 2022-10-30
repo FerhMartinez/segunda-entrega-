@@ -503,9 +503,9 @@ aside h3 {
     color:salmon;
     text-decoration: none;
     font-size: 17px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: -79px;
+    margin-top: 3px;
+    margin-bottom: -5px;
     cursor: pointer;
 
 }
@@ -635,17 +635,12 @@ aside h3 {
 }
 #footer #naveg img{
     font-size: 20px;
-    width: 45px;
+    width: 45px
 
-
-
-
-}
-.front{
-    display: block;
-    text-align: center;
-    font: size 40px;
-    color: brown;
-    background-color: #cccc;
-    font-family: Arial, Helvetica, sans-serif;
+    }
+.galeria2{
+    padding: 43px;
+    margin: 100px;
+    width: 1000px;
+    height: 380px;
 }
