@@ -532,12 +532,15 @@ aside h3 {
 
 }
 #articulo a{
+    margin-top: auto;
     color: brown;
     text-decoration: none;
 }
 #articulo{
-    font-size: 15px;
+    margin-top: 34%;
+    display: block;
     text-align: center;
+    font-size: 15px;
 }
 #irblog {
     font-family: "bebasneue";

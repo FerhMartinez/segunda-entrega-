@@ -25,7 +25,9 @@
         text-align: center;
         width: 50%
     }
-    #articulo {
+    #articulo  {
+        margin-top: 50%;
+        text-align: center;
         width: 65%;
         font-size: 80%;
     }
