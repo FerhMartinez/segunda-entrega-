@@ -67,10 +67,14 @@
     }
 }
 
-@media (max-width:724px) {
-    #header {
-        width: 100%;
-        height: 300px;
+
+@media (max-width:892px) {
+    #footer h5 {
+        font-size: 123%;
+    }
+
+    #footer .wrap>div {
+        width: 22%;
 
     }
 
@@ -78,41 +82,101 @@
         display: block;
         padding: 25%;
         margin-top: -18%;
-        font-size: 50%;
+        font-size: 76%;
         text-align: center;
+    }
 
+    .card .category,
+    a {
+        width: 100%;
+        height: 14%;
+        font-family: "trebuchetMS";
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        color: brown;
+        transition: all 300ms;
+    }
+}
+
+@media (max-width:814px) {
+    #footer .wrap>div {
+        width: 20%;
+    }
+
+    #footer h5 {
+        font-size: 98%;
+    }
+}
+
+@media (max-width:754px) {
+
+    #menu ul li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms;
+        font-size: 50%;
     }
 
     #articulo .parr {
         display: block;
         text-align: center;
         width: 60%;
-        padding: 40%;
+        padding: 4%;
         font-size: 80%;
+
+        #header {
+            width: 100%;
+            height: 60px;
+        }
+
+        #header {
+            width: 100%;
+            height: 300px;
+
+        }
+
+        .description {
+            display: block;
+            padding: 25%;
+            margin-top: -18%;
+            font-size: 50%;
+            text-align: center;
+
+        }
+
+        #articulo .parr {
+            display: block;
+            text-align: center;
+            width: 60%;
+            padding: 40%;
+            font-size: 80%;
+        }
+
+        #red {
+            text-align: center;
+        }
+
+        #lateral {
+            display: block;
+            text-align: center;
+        }
+
+        .galeria2 {
+            width: 70%;
+        }
     }
 
-    #red {
-        text-align: center;
-    }
+    @media (max-width:990px) {
 
-    #lateral {
-        display: block;
-        text-align: center;
+        #articulo {
+            text-align: center;
+            font-size: 73%;
+            width: 99%;
+        }
     }
-
-    .galeria2 {
-        width: 70%;
-    }
-}
-
-@media (max-width:990px) {
-
-    #articulo {
-        text-align: center;
-        font-size: 73%;
-        width: 99%;
-    }
-}
 
 
 
