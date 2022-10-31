@@ -354,6 +354,8 @@ body {
     font-family: "trebuchetMS";
     float: left;
     margin: 20px;
+    min-height: auto;
+
 }
 
 aside h3 {
@@ -543,6 +545,8 @@ aside h3 {
     display: block;
     text-align: center;
     font-size: 15px;
+    min-height: auto;
+
 }
 #irblog {
     font-family: "bebasneue";

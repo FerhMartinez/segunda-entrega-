@@ -37,6 +37,8 @@
         text-align: center;
         width: 98%;
         font-size: 80%;
+        min-height: auto;
+
     }
 
     .description {
@@ -73,6 +75,8 @@
         text-align: center;
         font-size: 73%;
         width: 99%;
+        min-height: auto;
+
     }
 }
 
@@ -136,6 +140,8 @@
         width: 60%;
         padding: 4%;
         font-size: 80%;
+        min-height: auto;
+
 
         #header {
             width: 100%;
@@ -163,6 +169,8 @@
             width: 60%;
             padding: 40%;
             font-size: 80%;
+            min-height: auto;
+
         }
 
         #red {
@@ -172,6 +180,8 @@
         #lateral {
             display: block;
             text-align: center;
+            min-height: auto;
+
         }
 
         .galeria2 {
@@ -191,7 +201,7 @@
 
     #header {
         width: 100%;
-        height: 150px;
+        height: 120px;
         padding-top: 10px;
     }
 
@@ -226,5 +236,71 @@
         float: none;
         width: 389px;
         margin: 0px auto;
+    }
+
+    #footer .wrap>div {
+        width: 18%;
+    }
+
+    #footer h5 {
+        font-size: 78%;
+    }
+
+    @media (max-width:703px) {
+        #lateral {
+            width: 94%;
+            min-height: auto;
+        }
+
+        #articulo {
+            width: 100%;
+            min-height: auto;
+        }
+    }
+
+    #login input[type="submit"],
+    #login input[type="button"],
+    #login button {
+        width: 70%;
+    }
+    
+    #footer .wrap>div {
+        width: 100%;
+        margin: 0px auto;
+        margin-top: 20px;
+        padding-bottom: 45px;
+    }
+    #footer{
+        height: auto;
+    }
+
+    #footer #naveg img {
+        font-size: 25px;
+        width: 12%;
+
+    }
+
+
+    #footer h5 {
+        font-size: 154%;
+    }
+
+    @media (max-width:598px){
+        #menu {
+            clear: both;
+            float: none;
+            width:100%;
+            margin: 0px auto;
+            font-size: 50px;
+        }
+        #menu li {
+            width: 100%;
+        }
+        
+    #header {
+        width: 100%;
+        height: 350px;
+        padding-top: 10px;
+    }
     }
 }
