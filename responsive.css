@@ -5,13 +5,13 @@
 
     }
 
-    #banner h1 { 
+    #banner h1 {
         display: block;
         font-size: 100% auto;
         text-align: center;
         display: flex;
         justify-content: center;
-        
+
     }
 
     #cards {
@@ -54,6 +54,13 @@
     #footer .wrap>div {
         width: 24%;
     }
+
+    #footer #naveg img {
+        font-size: 20px;
+        width: 12%;
+
+    }
+
 
     #footer h5 {
         font-size: 154%;
