@@ -187,6 +187,7 @@ body {
     background-position: 449px -1150px;
     animation: banner 10s linear;
     overflow: hidden;
+    display: flex;
 
 
 }
@@ -290,7 +291,7 @@ body {
 
 .card .category ,a {
     width: 100%;
-    height: 45px;
+    height: 14%;
     font-family: "trebuchetMS";
     font-size: 18px;
     text-decoration: none;
@@ -483,7 +484,7 @@ aside h3 {
     display: block;
     font-size: 14px;
     text-decoration: none;
-    margin-left: 18px;
+    margin-left: 2%;
     color: goldenrod;
     text-align: center;
 }
@@ -586,7 +587,7 @@ aside h3 {
     background: url(img/gray.png), white;
     border-radius: 10px;
     color:black;
-    height: 50px;
+    height: 15%;
     letter-spacing: 2px;
     text-align: center;
     font-family: "bebasneue";
