@@ -218,4 +218,10 @@
     transition: all300ms;
     margin: 0px auto;
 }
+#menu {
+    clear: both;
+    float: none;
+    width: 389px;
+    margin: 0px auto;
+  }
 }
