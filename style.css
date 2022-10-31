@@ -508,7 +508,7 @@ aside h3 {
     font-size: 17px;
     margin-left: -79px;
     margin-top: 3px;
-    margin-bottom: -5px;
+    margin-bottom: 8%;
     cursor: pointer;
 
 }
@@ -649,3 +649,4 @@ aside h3 {
     width: 80%;
     height: 380px;
 }
+
