@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "name": "pre-entrega-3-scss",
+  "description": "Segunda pre-entrega\r Alumno: Fernando Martinez\r comisiòn 33085\r Lo siento no me alcanzo el tiempo envio mi trabjao incompleto.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "sass",
+    "build-css": "sass scss/prueba.scss css/prueba.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerhMartinez/segunda-entrega-.git"
+  },
+  "author": "Fernando Martinez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FerhMartinez/segunda-entrega-/issues"
+  },
+  "homepage": "https://github.com/FerhMartinez/segunda-entrega-#readme"
+}
