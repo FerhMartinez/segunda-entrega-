@@ -1,0 +1,52 @@
+#banner
+  width: 95%
+  height: 79px
+  border: 10px solid white
+  border-radius: 60px
+  box-shadow: 0px 0px 2px grey
+  background: url(..img/programmer.png)
+  background-position: 449px -1150px
+  animation: banner 10s linear
+  overflow: hidden
+  display: flex
+
+  h1
+    display: block
+    width: 850px
+    font-family: "bebasnuve"
+    text-align: center
+    color: white
+    font-size: 25px
+    font-weight: normal
+    letter-spacing: 2px
+    text-shadow: 2px 2px 2px brown
+    margin: 27px auto
+    animation: text 10s linear
+
+@keyframes banner
+  0%
+    background-position: 0px 0px
+
+  100%
+    background-position: 449px -1150px
+
+@keyframes text
+  0%
+    transform: translatex-Y(-200%) scale(2, 2)
+    opacity: 1
+
+  70%
+    transform: translateX(600%) scale(4, 4)
+    opacity: 0
+
+  85%
+    transform: translateX(-600%) scale(4, 4)
+    text-shadow: none
+    color: transparent
+    opacity: o
+
+  100%
+    transform: translateX(10%) scale(1, 1)
+    opacity: 1
+    
+    

@@ -1,0 +1,89 @@
+#header {
+    width: 100%;
+    height: 70px;
+    background-color: brown;
+    font-family: "bebasneue";
+    color: white;
+}
+
+#logo {
+    float: left;
+    width: 300px;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all300ms;
+
+    &:hover {
+        border-radius: 60px;
+        color: black;
+        background-color: #ccc;
+    }
+
+    .gear {
+        
+        float: left;
+        font-size: 30px;
+        margin-top: 8px;
+        margin-left: 26px;
+        animation-name: rotate-gear;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    &:hover .gear {
+        animation: abajo 500ms linear;
+    }
+
+    h3 {
+        display: block;
+        float: right;
+        font-size: 237%;
+        margin-top: 5px;
+        margin-right: 50px;
+        transition: all 300ms;
+
+        &:hover h3 {
+            animation: right 300ms linear;
+        }
+    }
+}
+
+@keyframes rotate-gear {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes abajo {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(200%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes right {
+    from {
+        transform: translateX(200%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}

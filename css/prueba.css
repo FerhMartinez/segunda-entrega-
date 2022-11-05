@@ -1,3 +1,7 @@
+@import url(fonts/trebuchetMS);
+@import url(fonts/bebasneue);
+@import url(fonts/websymbols-regular-webfont);
+@import url(fonta/websymbolsRegular);
 /* Fuentes */
 @font-face {
   font-family: "trebuchetMS";
@@ -27,13 +31,15 @@
 body {
   background: url(img/pattern.png);
 }
-body .wrap {
+
+.wrap {
   width: 1200px;
   margin: 0px auto;
 }
-body .wrap .gear,
-body .wrap .icon {
-  font-family: websymbolsRegular;
+
+.gear,
+.icon {
+  font-family: "websymbolsRegular";
 }
 
 /* Cabecera */
@@ -44,7 +50,8 @@ body .wrap .icon {
   font-family: "bebasneue";
   color: white;
 }
-#header #logo {
+
+#logo {
   float: left;
   width: 300px;
   /* background-color: black; */
@@ -57,12 +64,12 @@ body .wrap .icon {
   overflow: hidden;
   transition: all300ms;
 }
-#header #logo:hover {
+#logo:hover {
   border-radius: 60px;
   color: black;
   background-color: #ccc;
 }
-#header #logo .gear {
+#logo .gear {
   display: block;
   float: left;
   font-size: 30px;
@@ -73,6 +80,20 @@ body .wrap .icon {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+#logo:hover .gear {
+  animation: abajo 500ms linear;
+}
+#logo h3 {
+  display: block;
+  float: right;
+  font-size: 237%;
+  margin-top: 5px;
+  margin-right: 50px;
+  transition: all 300ms;
+}
+#logo h3:hover h3 {
+  animation: right 300ms linear;
+}
 
 @keyframes rotate-gear {
   from {
@@ -82,10 +103,6 @@ body .wrap .icon {
     transform: rotateZ(360deg);
   }
 }
-#logo:hover .gear {
-  animation: abajo 500ms linear;
-}
-
 @keyframes abajo {
   0% {
     transform: translateY(0%);
@@ -97,19 +114,6 @@ body .wrap .icon {
     transform: translateY(0%);
   }
 }
-#logo h3 {
-  display: block;
-  float: right;
-  font-size: 237%;
-  margin-top: 5px;
-  margin-right: 50px;
-  transition: all 300ms;
-}
-
-#logo:hover h3 {
-  animation: right 300ms linear;
-}
-
 @keyframes right {
   from {
     transform: translateX(200%);
@@ -123,7 +127,6 @@ body .wrap .icon {
   height: 70px;
   background: transparent;
 }
-
 #menu ul li {
   font-size: 24px;
   display: inline-block;
@@ -131,14 +134,12 @@ body .wrap .icon {
   letter-spacing: 1px;
   line-height: 70px;
 }
-
 #menu ul li a {
   display: block;
   color: white;
   text-decoration: none;
   transition: all 300ms;
 }
-
 #menu ul li a:hover {
   color: black;
   transform: scale(1.2, 1.2);
@@ -151,21 +152,12 @@ body .wrap .icon {
   border: 10px solid white;
   border-radius: 60px;
   box-shadow: 0px 0px 2px grey;
-  background: url(img/Programmer.png);
+  background: url(..img/programmer.png);
   background-position: 449px -1150px;
   animation: banner 10s linear;
   overflow: hidden;
   display: flex;
 }
-@keyframes banner {
-  0% {
-    background-position: 0px 0px;
-  }
-  100% {
-    background-position: 449px -1150px;
-  }
-}
-
 #banner h1 {
   display: block;
   width: 850px;
@@ -178,6 +170,15 @@ body .wrap .icon {
   text-shadow: 2px 2px 2px brown;
   margin: 27px auto;
   animation: text 10s linear;
+}
+
+@keyframes banner {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 449px -1150px;
+  }
 }
 @keyframes text {
   0% {
@@ -199,7 +200,6 @@ body .wrap .icon {
     opacity: 1;
   }
 }
-
 /* Tarjetas */
 .card {
   float: left;
@@ -217,7 +217,6 @@ body .wrap .icon {
 .card:hover {
   background: rgba(204, 204, 204, 0.8);
 }
-
 .card .icon {
   display: block;
   width: 100%;
@@ -233,6 +232,18 @@ body .wrap .icon {
   color: tomato;
   animation: icon 300ms linear;
 }
+.card .category {
+  width: 100%;
+  height: 14%;
+  font-family: "trebuchetMS";
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: brown;
+  transition: all 300ms;
+}
+
 @keyframes icon {
   from {
     transform: translateY(-200%);
@@ -241,8 +252,6 @@ body .wrap .icon {
     transform: translateY(0%);
   }
 }
-
-.card .category,
 a {
   width: 100%;
   height: 14%;
@@ -259,6 +268,17 @@ a {
   color: goldenrod;
   animation: category 500ms linear;
 }
+.card .description {
+  font-family: "trebuchetMS";
+  text-align: center;
+  color: black;
+  transition: all 300ms linear;
+}
+.card:hover .description {
+  color: rgb(0, 162, 255);
+  animation: descrip 400ms linear;
+}
+
 @keyframes category {
   from {
     transform: translateY(-400);
@@ -269,19 +289,6 @@ a {
     color: goldenrod;
   }
 }
-
-.card .description {
-  font-family: "trebuchetMS";
-  text-align: center;
-  color: black;
-  transition: all 300ms linear;
-}
-
-.card:hover .description {
-  color: rgb(0, 162, 255);
-  animation: descrip 400ms linear;
-}
-
 @keyframes descrip {
   from {
     transform: translateX(-300%);
@@ -343,9 +350,7 @@ aside h3 {
 #lateral input[type=text] #lateral input[type=text]:focus {
   color: black;
 }
-
-#lateral input[type=button],
-#lateral input[type=submit] {
+#lateral input[type=button], #lateral input[type=submit] {
   height: 30px;
   cursor: pointer;
   font-size: 15px;
@@ -368,8 +373,7 @@ aside h3 {
   box-shadow: 2px 2px 2px;
 }
 
-#login input[type=email],
-#login input[type=password] {
+#login input[type=email], #login input[type=password] {
   display: block;
   margin: 0px auto;
   margin-top: 20px;
@@ -380,15 +384,13 @@ aside h3 {
   padding-left: 35px;
   color: black;
 }
-#login input[type=email] #login input[type=email]:focus,
-#login input[type=email] #login input[type=password]:focus,
-#login input[type=password] #login input[type=email]:focus,
-#login input[type=password] #login input[type=password]:focus {
+#login input[type=email] #login input[type=email]:focus, #login input[type=email] #login input[type=password]:focus {
   color: black;
 }
-
-#login #user,
-#login #password {
+#login input[type=password] #login input[type=email]:focus, #login input[type=password] #login input[type=password]:focus {
+  color: black;
+}
+#login #user {
   text-align: center;
   display: block;
   position: absolute;
@@ -396,15 +398,32 @@ aside h3 {
   margin-top: 6px;
   height: 30px;
 }
-
 #login #password {
+  text-align: center;
+  display: block;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 6px;
+  height: 30px;
   margin-left: 18px;
   margin-top: 25px;
   font-size: 20px;
 }
-
-#login input[type=submit],
-#login input[type=button],
+#login input[type=submit], #login input[type=button] {
+  display: block;
+  text-align: center;
+  width: 100px;
+  height: 35px;
+  margin-top: 20px;
+  color: black;
+  border: 2px solid rgb(207, 103, 72);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "trebuchetMS";
+  font-weight: lighter;
+  margin-left: 85px;
+}
 #login button {
   display: block;
   text-align: center;
@@ -420,7 +439,6 @@ aside h3 {
   font-weight: lighter;
   margin-left: 85px;
 }
-
 #login a {
   display: block;
   font-size: 14px;
@@ -438,7 +456,6 @@ aside h3 {
   height: 130px;
   padding-left: 8px;
 }
-
 #red a {
   display: block;
   color: salmon;
@@ -449,7 +466,6 @@ aside h3 {
   margin-bottom: 8%;
   cursor: pointer;
 }
-
 #red .overlay {
   display: block;
   height: 20px;
@@ -467,16 +483,9 @@ aside h3 {
   opacity: 0;
   transition: all 40ms;
 }
-
 #red div:hover .overlay {
   opacity: 1;
   transform: translateX(0%);
-}
-
-#articulo a {
-  margin-top: auto;
-  color: brown;
-  text-decoration: none;
 }
 
 #articulo {
@@ -486,12 +495,16 @@ aside h3 {
   font-size: 15px;
   min-height: auto;
 }
+#articulo a {
+  margin-top: auto;
+  color: brown;
+  text-decoration: none;
+}
 
 #irblog {
   font-family: "bebasneue";
   font-size: 45px;
 }
-
 #irblog a {
   display: block;
   text-align: center;
@@ -512,7 +525,6 @@ aside h3 {
   color: white;
   overflow: hidden;
 }
-
 #footer .wrap > div {
   float: left;
   width: 26%;
@@ -522,13 +534,11 @@ aside h3 {
   color: white;
   font-family: "trebuchetMS";
 }
-
 #footer a {
   text-decoration: none;
   color: #ccc;
   transition: all 300ms;
 }
-
 #footer h5 {
   display: block;
   background: url(img/gray.png), white;
@@ -544,19 +554,16 @@ aside h3 {
   border-radius: 5px;
   margin-bottom: 15px;
 }
-
 #footer ul {
   text-align: left;
   margin: 20px;
   font-size: 25px;
 }
-
 #footer ul li {
   margin-top: 10px;
   padding: 5px;
   border-bottom: 1px solid #ccc;
 }
-
 #footer ul li a {
   display: block;
   height: 40px;
@@ -567,7 +574,6 @@ aside h3 {
   color: goldenrod;
   width: 100%;
 }
-
 #footer iframe {
   width: 100%;
   height: 250px;
@@ -576,11 +582,9 @@ aside h3 {
   border: 5px solid rgba(204, 204, 204, 0.8);
   box-shadow: 0px 0px 2px grey;
 }
-
 #footer img {
   margin-bottom: 8px;
 }
-
 #footer #naveg img {
   font-size: 20px;
   width: 45px;

@@ -1,0 +1,110 @@
+.card {
+    float: left;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ccc;
+    background: white;
+    overflow: hidden;
+    margin: 15px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 300ms;
+
+    &:hover {
+        background: rgba(204, 204, 204, 0.8);
+    }
+
+    .icon {
+        display: block;
+        width: 100%;
+        height: 120px;
+        font-size: 45px;
+        line-height: 130px;
+        text-align: center;
+        margin: 0px auto;
+        transition: all 300ms;
+
+        &:hover .icon {
+            font-size: 60px;
+            color: tomato;
+            animation: icon 300ms linear;
+        }
+    }
+
+    .category {
+        width: 100%;
+        height: 14%;
+        font-family: "trebuchetMS";
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        color: brown;
+        transition: all 300ms;
+    }
+}
+
+@keyframes icon {
+    from {
+        transform: translateY(-200%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+a {
+    width: 100%;
+    height: 14%;
+    font-family: "trebuchetMS";
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: brown;
+    transition: all 300ms;
+}
+
+.card {
+    &:hover .category {
+        color: goldenrod;
+        animation: category 500ms linear;
+    }
+
+    .description {
+        font-family: "trebuchetMS";
+        text-align: center;
+        color: black;
+        transition: all 300ms linear;
+    }
+
+    &:hover .description {
+        color: rgb(0, 162, 255);
+        animation: descrip 400ms linear;
+    }
+}
+
+@keyframes category {
+    from {
+        transform: translateY(-400);
+        color: green;
+    }
+
+    to {
+        transform: translateY(0%);
+        color: goldenrod;
+    }
+}
+
+@keyframes descrip {
+    from {
+        transform: translateX(-300%);
+        color: black;
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}

@@ -1,0 +1,183 @@
+#lateral {
+    width: 300px;
+    min-height: 1200px;
+    font-family: "trebuchetMS";
+    float: left;
+    margin: 20px;
+    min-height: auto;
+}
+
+aside h3 {
+    display: block;
+    width: auto;
+    height: 45px;
+    line-height: 49px;
+    background: url(img/gray.png), white;
+    box-shadow: 0px 1px 0px black, 2px 2px 0px black, 2px 3px 0px;
+    font-size: 30px;
+    font-family: "bebasneue";
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#lateral h3:first-child {
+    margin-top: 0px;
+}
+
+#search {
+    width: 90%;
+    height: 30px;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#lateral input {
+    &[type=text] {
+        width: 85%;
+        height: 30px;
+        border: none;
+        padding-right: 5px;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #ccc;
+        transition: all 300ms;
+
+        #lateral input[type=text]:focus {
+            color: black;
+        }
+    }
+
+    &[type=button],
+    &[type=submit] {
+        height: 30px;
+        cursor: pointer;
+        font-size: 15px;
+        background-color: transparent;
+        border: none;
+        border-left: 1px solid #ccc;
+        color: black;
+        padding-left: 6px;
+    }
+}
+
+.aside-bar {
+    width: 85%;
+    height: 240px;
+    border-radius: 10px;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding-top: 2px;
+    background: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px;
+}
+
+#login {
+    input {
+
+        &[type=email],
+        &[type=password] {
+            display: block;
+            margin: 0px auto;
+            margin-top: 20px;
+            width: 80%;
+            height: 30px;
+            border: 1px solid rgba(204, 204, 204, 0.8);
+            border-radius: 5px;
+            padding-left: 35px;
+            color: black;
+        }
+
+        &[type=email] #login input {
+
+            &[type=email]:focus,
+            &[type=password]:focus {
+                color: black;
+            }
+        }
+
+        &[type=password] #login input {
+
+            &[type=email]:focus,
+            &[type=password]:focus {
+                color: black;
+            }
+        }
+    }
+
+    #user {
+        text-align: center;
+        display: block;
+        position: absolute;
+        margin-left: 15px;
+        margin-top: 6px;
+        height: 30px;
+    }
+
+    #password {
+        text-align: center;
+        display: block;
+        position: absolute;
+        margin-left: 15px;
+        margin-top: 6px;
+        height: 30px;
+        margin-left: 18px;
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    input {
+
+        &[type=submit],
+        &[type=button] {
+            display: block;
+            text-align: center;
+            width: 100px;
+            height: 35px;
+            margin-top: 20px;
+            color: black;
+            border: 2px solid rgb(207, 103, 72);
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            font-family: "trebuchetMS";
+            font-weight: lighter;
+            margin-left: 85px;
+        }
+    }
+
+    button {
+        display: block;
+        text-align: center;
+        width: 100px;
+        height: 35px;
+        margin-top: 20px;
+        color: black;
+        border: 2px solid rgb(207, 103, 72);
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: "trebuchetMS";
+        font-weight: lighter;
+        margin-left: 85px;
+    }
+
+    a {
+        display: block;
+        font-size: 14px;
+        text-decoration: none;
+        margin-left: 2%;
+        color: goldenrod;
+        text-align: center;
+
+        &:hover {
+            text-decoration: underline;
+            color: greenyellow;
+        }
+    }
+}
